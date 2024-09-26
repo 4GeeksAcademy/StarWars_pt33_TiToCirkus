@@ -12,7 +12,7 @@ export const Navbar = () => {
 			</Link>
 			<span className="ms-auto position-relative">
 				<button className="btn btn-primary dropdown-toggle mt-1 mb-0 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-					Favorites [{store.favorites.length}]
+					Favorites {store.favorites.length}
 				</button>
 				<div className="dropdown-menu dropdown-menu-end bg-secondary mt-2">
 					<ul className="m-0 px-3 w-100" style={{listStyle: "none"}}>

@@ -19,7 +19,7 @@ export const Home = () => {
 
 			<div className="row mt-4 justify-content-center ">
 				<div className="col-12" style={{ width: "90%"}}>
-					<h1>Characters</h1>
+					<h1 className="text-danger">Characters</h1>
 					<div className="row card-row d-flex flex-nowrap flex-row">
 						{characters?.map((character, index) => {
 							return <CharacterCard name={character.name} imageIndex={index + 1} birth_year={character.birth_year} height={`${character.height/100}m`} eye_color={character.eye_color} link={"/characters/"+index} key={index} id={index} type={`characters`} />
@@ -30,7 +30,7 @@ export const Home = () => {
 			
 			<div className="row mt-4 justify-content-center ">
 				<div className="col-12" style={{ width: "90%"}}>
-					<h1>Planets</h1>
+					<h1 className="text-danger">Planets</h1>
 					<div className="row card-row d-flex flex-nowrap flex-row">
 						{planets?.map((planet, index) => {
 							return <PlanetCard name={planet.name} imageURL={planetImages[index]} population={planet.population} climate={planet.climate} terrain={planet.terrain} link={"/planets/"+index} key={index} id={index} type={`planets`} />
@@ -40,7 +40,7 @@ export const Home = () => {
 			</div>
 			<div className="row my-4 pd-5 justify-content-center ">
 				<div className="col-12" style={{ width: "90%"}}>
-					<h1>Starships</h1>
+					<h1 className="text-danger">Starships</h1>
 					<div className="row card-row d-flex flex-nowrap flex-row">
 						{ships?.map((ship, index) => {
 							return <StarshipCard name={ship.name} imageURL={shipImages[index]} manufacturer={ship.manufacturer} cost={ship.cost_in_credits} passengers={ship.passengers} link={"/starships/"+index} key={index} id={index} type={`starships`}/>
